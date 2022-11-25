@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
+@mixin h1 {
+    @include Bellefair;
+    font-size: 150px;
+    color: $white;
+}
+
+@mixin h2 {
+    @include Bellefair;
+    font-size: 100px;
+    color: $white;
+}
+
+@mixin h3 {
+    @include Bellefair;
+    font-size: 56px;
+    color: $white;
+}
+
+@mixin h4 {
+    @include Bellefair;
+    font-size: 32px;
+    color: $white;
+}
+
+@mixin h5 {
+    @include Barlow;
+    font-size: 28px;
+    kerning: 4.75;
+}
+
+@mixin Subheading1 {
+    @include Bellefair;
+    font-size: 28px;
+    color: $white;
+}
+
+@mixin Subheading2 {
+    @include Barlow;
+    font-size: 14px;
+    kerning: 2.35;
+}
+
+@mixin Nav-Text {
+    @include Barlow;
+    font-size: 16px;
+    kerning: 2.7;
+}

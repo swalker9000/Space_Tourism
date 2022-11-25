@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+
+/* COLORS */
+$black: hsl(230, 35,7);
+$lightblue-grey: hsl(231,77,90);
+$white: hsl(0,0,100);
+
+/* FONTS */
+
+$bellefair: "Bellefair-Regular";
+$barlow-condensed: "Barlow_Condensed";
+
+@mixin Bellefair {
+    font-family: $bellefair;
+}
+
+@mixin Barlow {
+    font-family: $barlow-consensed;
+}
