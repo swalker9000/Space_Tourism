@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+@mixin hover {
+    border-bottom: 3px solid $white-hover;
+    opacity: .5px;
+}
+
+@mixin active {
+    border-bottom: 3px solid $white;
+}

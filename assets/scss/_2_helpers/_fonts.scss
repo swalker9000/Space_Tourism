@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
+
+@font-face {
+    font-family: "Bellefair-Regular";
+    src: url("../../fonts/Bellefair/Bellefair-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Barlow-Medium";
+    src: local("../../fonts/Barlow/Barlow-Medium.ttf"), url("../..fonts/Barlow/Barlow-Medium.ttf"), format("ttf");
+}
+
+@font-face {
+    font-family: "BarlowCondensed-Medium";
+    src: local("../../fonts/Barlow_Condensed/BarlowCondensed-Medium.ttf"), url("../../fonts/Barlow_Condensed/BarlowCondensed-Medium.ttf"), format("ttf");
+
+}
+
+@font-face {
+    font-family: "Barlow-Light"; 
+    src: local("../../fonts/Barlow/Barlow-Light.ttf"), url("../../fonts/Barlow/Barlow-Light.ttf"), format("ttf");
+}
+
+@font-face {
+    font-family: "BarlowCondensed-Light"; 
+    src: local("../../fonts/Barlow_Condensed/BarlowCondensed-Light.ttf"), url("../../fonts/Barlow_Condensed/BarlowCondensed-Light.ttf"), format("ttf");
+}

@@ -1,0 +1,81 @@
+h4 {
+    @include h4;
+    opacity: .5;
+}
+
+h3 {
+    @include h3;
+}
+
+body {
+    background: url("../../img/crew/background-crew-desktop.jpg");
+    background-size: cover;
+
+    main.crew {
+        display: flex;
+        flex-direction: row;
+        margin: 35px 163px 0 166px;
+        justify-content: space-between;
+        align-items: end;
+        
+        h5{
+            margin-top: 0px;
+            margin-bottom: 160px;
+        }
+
+        span {
+            opacity: .25;
+        }
+
+        section.crew-member {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &__details {
+                max-width: 488px;
+                margin-bottom: 120px;
+
+                h4 {
+                    margin: 0 0 15px;
+                }
+
+                h3 {
+                    margin: 0 0 27px;
+                }
+            }
+
+            nav.crew-member__choices {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 105px;
+                a {
+                    list-style: none;
+                    background: white;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    margin-right: 24px;
+                    opacity: .17;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    &:hover {
+                        opacity: .5;
+                    }
+
+                    &:active,
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        figure.crew-member__image {
+            margin-bottom: 0;
+        }
+    }
+}

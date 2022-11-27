@@ -1,0 +1,90 @@
+body {
+    background: url("../../img/technology/background-technology-desktop.jpg");
+    background-size: cover;
+
+    main.technology {
+        display: flex;
+        flex-direction: column;
+        margin: 35px 0 0 166px;
+        justify-content: space-between;
+        
+        h5{
+            margin-top: 0px;
+            margin-bottom: 26px;
+        }
+
+        span {
+            opacity: .25;
+        }
+
+        .launch {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 101px;
+
+            .launch-steps {
+                display: flex;
+                flex-direction: row;
+                max-height: 303px;
+                width: 630px;
+                justify-content: space-between;
+
+                &__choices {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    a {
+                        @include h4;
+                        text-decoration: none;
+                        border: 1px solid rgba(255, 255, 255, .25);
+                        border-radius: 50%;
+                        padding: 22px 32px 21px 33px;
+
+                        &:first-child {
+                            padding: 22px 31px 21px 35px;
+                        }
+
+                        &:hover {
+                            border-color: $white;
+                        }
+
+                        &:active {
+                            border-color: $white;
+                            background: $white;
+                            color: $black;
+                        }
+                        
+                    }
+
+                }
+
+                .launch-steps__terminology {
+                    display: flex;
+                    flex-direction: column;
+                    width: 470px;
+
+                    .subtitle {
+                        @include Nav-Text;
+                        color: $lightblue-grey;
+                        font-size: 16px;
+                        margin-top: 0;
+                        margin-bottom: 11px;
+                    }
+
+                    h3 {
+                        margin: 0 0 17px 0;
+                    }
+                }
+                
+            }
+        
+            figure.launch-image {
+                margin-right: 0;
+            }
+        }
+    }
+}
+

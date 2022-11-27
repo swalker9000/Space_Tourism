@@ -1,0 +1,102 @@
+h2 {
+    @include h2;
+
+}
+
+body {
+    background: url("../../img/destination/background-destination-desktop.jpg");
+
+    main.destination {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 163px 50px 166px;
+        
+        h5{
+            margin-top: 0px;
+            margin-bottom: 70px;
+        }
+
+        span {
+            opacity: .25;
+        }
+
+        .destination-details {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: end;
+
+            &__facts {
+                display: flex;
+                flex-direction: column;
+
+                &-choices {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0;
+                    height: 34px;
+
+                    li {
+                        @include Nav-Text;
+                        list-style: none;
+                        margin-right: 36px;
+                        padding-bottom: 12px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        &:hover {
+                            @include hover;
+                            padding-bottom: 12px;
+                        }
+
+                        &:active,
+                        &.active {
+                            @include active;
+                        }
+                    }
+                }
+
+                h2 {
+                    margin: 0;
+                }
+
+                p {
+                    max-width: 444px;
+                }
+
+                hr {
+                    @include hr;
+                    width: 444px;
+                    margin-top: 45px;
+                    margin-bottom: 28px;
+                }
+            }
+
+            &__stats {
+                display: flex;
+                flex-direction: row;
+
+                article {
+                    margin-right: 79px;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    p.subheading2 {
+                        @include Subheading2;
+                        margin-bottom: 0;
+                    }
+
+                    p.subheading1 {
+                        @include Subheading1;
+                        margin-bottom: 0px;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
