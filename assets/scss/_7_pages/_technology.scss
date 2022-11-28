@@ -36,9 +36,8 @@ body#technology {
                     flex-direction: column;
                     justify-content: space-between;
 
-                    a {
+                    div {
                         @include h4;
-                        text-decoration: none;
                         border: 1px solid rgba(255, 255, 255, .25);
                         border-radius: 50%;
                         padding: 22px 32px 21px 33px;
@@ -51,7 +50,8 @@ body#technology {
                             border-color: $white;
                         }
 
-                        &:active {
+                        &:active,
+                        &.active {
                             border-color: $white;
                             background: $white;
                             color: $black;

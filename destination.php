@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
   <link rel="stylesheet" href="../assets/dist/css/main.css">
   <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/destination.js"></script>
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body id="destination">
@@ -27,7 +28,7 @@
         <section class="destination-details">
             <section class="destination-details__image">
                 <figure">
-                    <img src="./assets/img/destination/image-moon.webp" alt="moon">
+                    <img id="image" src="./assets/img/destination/image-moon.webp" alt="moon">
                     </figure>
             </section>
 
@@ -38,19 +39,17 @@
                     <li id="2">Europa</li>
                     <li id="3">Titan</li>
                 </ul>
-                <h2>Moon</h2>
-                <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help
-                    regain perspective and come back refreshed. While you’re there, take in some history
-                    by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                <h2 id="name"></h2>
+                <p id="description"></p>
                 <hr>
                 <section class="destination-details__stats">
                     <article>
                         <p class="subheading2">Avg. distance</p>
-                        <p class="subheading1"> 384,400 km</p>
+                        <p id="distance" class="subheading1"></p>
                     </article>
                     <article>
                         <p class="subheading2">Est. travel time</p>
-                        <p class="subheading1">3 days</p>
+                        <p id="travel" class="subheading1"></p>
                     </article>
                 </section>
             </section>

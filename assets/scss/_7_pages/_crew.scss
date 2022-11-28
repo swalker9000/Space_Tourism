@@ -33,7 +33,7 @@ body#crew {
             justify-content: space-between;
 
             &__details {
-                max-width: 488px;
+                width: 614px;
                 margin-bottom: 120px;
 
                 h4 {
@@ -45,11 +45,11 @@ body#crew {
                 }
             }
 
-            nav.crew-member__choices {
+            section.crew-member__choices {
                 display: flex;
                 flex-direction: row;
                 margin-bottom: 105px;
-                a {
+                div {
                     list-style: none;
                     background: white;
                     height: 15px;
@@ -57,6 +57,7 @@ body#crew {
                     border-radius: 50%;
                     margin-right: 24px;
                     opacity: .17;
+                    
 
                     &:last-child {
                         margin-right: 0px;
@@ -70,6 +71,7 @@ body#crew {
                     &.active {
                         opacity: 1;
                     }
+
                 }
             }
         }
