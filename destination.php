@@ -23,7 +23,8 @@
     <a href="/technology.php"><strong>03</strong> Technology</a>
   </nav>
 </section>
-</header>     <main class="destination">
+</header>     
+<main class="destination">
         <h5><span>01</span> Pick your destination</h5>
         <section class="destination-details">
             <section class="destination-details__image">

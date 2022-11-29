@@ -12,17 +12,31 @@ p {
 }
 
 body#home {
-    background: url("../../img/home/background-home-desktop.jpg");
+    background: url("../../img/home/background-home-tablet.jpg");
     background-size: cover;
     margin: 0;
+
+    @include breakpoint(large) {
+        background: url("../../img/home/background-home-desktop.jpg");
+
+    }
 
 
     .home {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+
+        @include breakpoint(large) {
         flex-direction: row;
         align-items: end;
         margin: 251px 165px 131px;
         justify-content: space-between;
+        align-items: start;
+        text-align: start;
+        }
 
         .intro {
             display: flex;
@@ -46,9 +60,14 @@ body#home {
             background: $white;
             border-radius: 50%;
             padding: 50px;
+            margin-top: 156px;
+
+            @include breakpoint(large) {
             position: absolute;
             left: 1001px;
             top: 495px;
+            margin-top:0;
+            }
 
             h5 a {
                 text-decoration: none;
@@ -63,6 +82,11 @@ body#home {
                 left: 913px;
                 top: 407px;
                 background-clip: padding-box;
+                margin-top: 68px;
+
+                @include breakpoint(large) {
+                    margin-top: 0px;
+                }
 
             }
         }

@@ -3,7 +3,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 0 0 0 39px;
+
+    @include breakpoint(large) {
     margin: 40px 0 40px 55px;
+    }
 
     hr {
         @include hr;
@@ -16,7 +20,11 @@
     nav {
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40.7742px); 
+        padding: 39px 46px 39px 48px;
+
+        @include breakpoint(large) {
         padding: 39px 165px 38px 123px;  
+        }
 
         a {
             @include Nav-Text;
@@ -36,6 +44,17 @@
             &:active,
             &.active {
                 @include active;
+            }
+
+            strong {
+
+                @include breakpoint(portrait) {
+                    display: none;
+                }
+
+                @include breakpoint(large) {
+                    display: inline;
+                }
             }
 
         }

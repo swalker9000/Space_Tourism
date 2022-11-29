@@ -11,16 +11,24 @@
 
 @mixin h2 {
     @include Bellefair;
-    font-size: 100px;
+    font-size: 80px;
     color: $white;
     text-transform: uppercase;
+
+    @include breakpoint(large) {
+        font-size: 100px;
+    }
 }
 
 @mixin h3 {
     @include Bellefair;
-    font-size: 56px;
+    font-size: 40px;
     color: $white;
     text-transform: uppercase;
+
+    @include breakpoint(large) {
+        font-size: 56px;
+    }
     
 }
 
@@ -33,10 +41,14 @@
 
 @mixin h5 {
     @include BarlowCondensed;
-    font-size: 28px;
+    font-size: 20px;
     letter-spacing: 4.75px;
     color: $lightblue-grey;
     text-transform: uppercase;
+
+    @include breakpoint(large) {
+        font-size: 28px;
+    }
 }
 
 @mixin Subheading1 {
@@ -55,15 +67,23 @@
 
 @mixin Nav-Text {
     @include Barlow-Light;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 2.7px;
     text-transform: uppercase;
     text-decoration: none;
     color: $white;
+
+    @include breakpoint(large) {
+        font-size: 16px;
+    }
 }
 
 @mixin bodycopy {
     @include Barlow-Light;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 32px;
+
+    @include breakpoint(large) {
+        font-size: 18px;
+    }
 }

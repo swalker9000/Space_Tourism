@@ -3,6 +3,10 @@ window.onload = function () {
     technologySelection();
 }
 
+window.onresize = function () {
+    getInfo(0);
+}
+
 function setTechnologyName(name) {
     var technologyName = document.getElementById("name");
     technologyName.innerHTML = name;
@@ -13,12 +17,18 @@ function setTechnologyDescription(description) {
     technologyDescription.innerHTML = description;
 }
 
-function setTechnologyImage(image) {
+function setTechnologyImage(image1, image2) {
     var technologyImage = document.getElementById("image");
-    if(technologyImage) {
-    technologyImage.setAttribute("src", image);
+    if (technologyImage) {
+        if (window.innerWidth <= 768) {
+        technologyImage.setAttribute("src", image1);
+        } else {
+            technologyImage.setAttribute("src", image2);
+        }
     }
 }
+
+
 
 
 async function getInfo(technologyID) {
@@ -28,10 +38,11 @@ async function getInfo(technologyID) {
 
     const response = await fetch(request);
     const info = await response.json();
+    const technologyInfo = info.technology[technologyID];
 
-    setTechnologyName(info.technology[technologyID]['name']);
-    setTechnologyDescription(info.technology[technologyID]['description']);
-    setTechnologyImage(info.technology[technologyID]['images']['portrait']);
+    setTechnologyName(technologyInfo['name']);
+    setTechnologyDescription(technologyInfo['description']);
+    setTechnologyImage(technologyInfo['images']['landscape'], technologyInfo['images']['portrait']);
 }
 
 function technologySelection() {
@@ -39,11 +50,11 @@ function technologySelection() {
 
     for (let i = 0; i < technologyOptions.length; i++) {
         technologyOptions[i].addEventListener("click", () => {
-            technologyNumber= technologyOptions[i].getAttribute("id");
+            technologyID = technologyOptions[i].getAttribute("id");
             var activeClass = document.querySelector(".launch-steps__choices > div.active");
             removeClass(activeClass, "class");
             addClass(technologyOptions[i], "active");
-            getInfo(technologyNumber);
+            getInfo(technologyID);
         });
     }
 }

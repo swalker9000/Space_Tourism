@@ -4,16 +4,30 @@ h2 {
 }
 
 body#destination {
+    background: url("../../img/destination/background-destination-tablet.jpg");
+
+    @include breakpoint(large) {
     background: url("../../img/destination/background-destination-desktop.jpg");
+    }
 
     main.destination {
         display: flex;
         flex-direction: column;
+        margin: 40px 0 0 0;
+
+        @include breakpoint(large) {
         margin: 50px 163px 50px 166px;
+        }
         
         h5{
             margin-top: 0px;
-            margin-bottom: 70px;
+            margin-bottom: 35px;
+            margin-left: 39px;
+
+            @include breakpoint(large) {
+                margin-left: 0;
+                margin-bottom: 70px;
+            }
         }
 
         span {
@@ -22,13 +36,41 @@ body#destination {
 
         .destination-details {
             display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include breakpoint(large) {
             flex-direction: row;
             justify-content: space-between;
             align-items: end;
+            }
+
+            &__image {
+            margin-bottom: 53px;
+
+            @include breakpoint(large) {
+                margin-bottom: 0;
+            }
+
+            img {
+                width: 300px;
+                height: 300px;
+
+                @include breakpoint(large) {
+                    width: 445px;
+                    height: 445px;
+                }
+            }
+        }
 
             &__facts {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+
+                @include breakpoint(large) {
+                    align-items: start;
+                }
 
                 &-choices {
                     display: flex;
@@ -41,6 +83,7 @@ body#destination {
                         list-style: none;
                         margin-right: 36px;
                         padding-bottom: 12px;
+                        font-size: 16px;
 
                         &:last-child {
                             margin-right: 0;
@@ -63,20 +106,37 @@ body#destination {
                 }
 
                 p {
+                    max-width: 578px;
+                    text-align: center;
+
+                    @include breakpoint(large) {
                     max-width: 444px;
+                    text-align: start;
+                    }
                 }
 
                 hr {
                     @include hr;
+                    width: 578px;
+                    margin-top: 25px;
+                    margin-bottom: 20px;
+
+                    @include breakpoint(large) {
                     width: 444px;
                     margin-top: 45px;
                     margin-bottom: 28px;
+                    }
                 }
             }
 
             &__stats {
                 display: flex;
                 flex-direction: row;
+                margin-bottom: 40px;
+
+                @include breakpoint(large) {
+                    margin-bottom: 0;
+                }
 
                 article {
                     margin-right: 79px;
