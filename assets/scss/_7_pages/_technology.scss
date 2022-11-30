@@ -1,10 +1,15 @@
 body#technology {
-    background: url("../../img/technology/background-technology-tablet.jpg");
+    background: url("../../img/technology/background-technology-mobile.jpg");
     background-size: cover;
+
+    @include breakpoint(portrait) {
+        background: url("../../img/technology/background-technology-tablet.jpg");
+        background-size: cover;
+    }
 
     @include breakpoint(large) {
         background: url("../../img/technology/background-technology-desktop.jpg");
-
+        background-size: cover;
     }
 
     main.technology {

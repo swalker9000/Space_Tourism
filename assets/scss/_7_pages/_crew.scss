@@ -8,11 +8,17 @@ h3 {
 }
 
 body#crew {
+    background: url("../../img/crew/background-crew-mobile.jpg");
+    background-size: cover;
+
+    @include breakpoint(portrait) {
     background: url("../../img/crew/background-crew-tablet.jpg");
     background-size: cover;
+    }
 
     @include breakpoint (large) {
         background: url("../../img/crew/background-crew-desktop.jpg");
+        background-size: cover;
     }
 
 
@@ -31,9 +37,16 @@ body#crew {
         h5 {
             margin-top: 40px;
             margin-left: 38px;
+            position: absolute;
+            top: 65px;
+            left: 50px;
+
+            @include breakpoint(portrait) {
+                position: inherit;
+            }
 
             @include breakpoint(large) {
-            margin: 0 0 160px;
+                margin: 0 0 160px;
             }
         }
 
@@ -45,13 +58,21 @@ body#crew {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            order: 2;
+
+            @include breakpoint(portrait) {
+               order:1;
+            }
 
             &__details {
                 align-self: center;
-                width: 614px;
                 margin-bottom: 40px;
                 text-align: center;
-                width: 458px;
+                order: 3;
+
+                @include breakpoint(portrait) {
+                    order: 1;
+                }
 
                 @include breakpoint(large) {
                     align-self: start;
@@ -68,6 +89,18 @@ body#crew {
                 h3 {
                     margin: 0 0 27px;
                 }
+
+                p {
+                    width: 327px; 
+
+                    @include breakpoint(portrait) {
+                        width: 458px;
+                    }
+
+                    @include breakpoint(large) {
+                        width: 444px;
+                    }
+                }
             }
 
             section.crew-member__choices {
@@ -75,6 +108,12 @@ body#crew {
                 flex-direction: row;
                 margin-bottom: 40px;
                 align-self: center;
+                order: 2;
+
+                @include breakpoint(portrait) {
+                    order: 3;
+                }
+               
 
                 @include breakpoint(large) {
                     align-self: start;
@@ -108,13 +147,35 @@ body#crew {
             }
         }
 
-        figure.crew-member__image {
-            margin-bottom: 0;
-            align-self: center;
+        figure {
+            order: 1;
+
+            @include breakpoint(portrait) {
+                order: 3;
+            }
+
+            &.crew-member__image {
+                margin-bottom: 20px;
+                align-self: center;
+                margin-top: 65px;
+
+                @include breakpoint(portrait) {
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                }
 
                 @include breakpoint(large) {
                     align-self: start;
                 }
+
+                #crew-image {
+                    max-width: 277px;
+
+                    @include breakpoint (portrait) {
+                        max-width: initial;
+                    }
+                }
+            }
         }
     }
 }

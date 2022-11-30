@@ -4,10 +4,17 @@ h2 {
 }
 
 body#destination {
+    background: url("../../img/destination/background-destination-mobile.jpg");
+    background: cover;
+
+    @include breakpoint(portrait) {
     background: url("../../img/destination/background-destination-tablet.jpg");
+    background: cover;
+    }
 
     @include breakpoint(large) {
-    background: url("../../img/destination/background-destination-desktop.jpg");
+        background: url("../../img/destination/background-destination-desktop.jpg");
+        background: cover;
     }
 
     main.destination {
@@ -16,10 +23,10 @@ body#destination {
         margin: 40px 0 0 0;
 
         @include breakpoint(large) {
-        margin: 50px 163px 50px 166px;
+            margin: 50px 163px 50px 166px;
         }
-        
-        h5{
+
+        h5 {
             margin-top: 0px;
             margin-bottom: 35px;
             margin-left: 39px;
@@ -40,28 +47,33 @@ body#destination {
             align-items: center;
 
             @include breakpoint(large) {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: end;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: end;
             }
 
             &__image {
-            margin-bottom: 53px;
-
-            @include breakpoint(large) {
-                margin-bottom: 0;
-            }
-
-            img {
-                width: 300px;
-                height: 300px;
+                margin-bottom: 53px;
 
                 @include breakpoint(large) {
-                    width: 445px;
-                    height: 445px;
+                    margin-bottom: 0;
+                }
+
+                img {
+                    width: 170px;
+                    height: 170px;
+
+                    @include breakpoint(portrait) {
+                        width: 300px;
+                        height: 300px;
+                    }
+
+                    @include breakpoint(large) {
+                        width: 445px;
+                        height: 445px;
+                    }
                 }
             }
-        }
 
             &__facts {
                 display: flex;
@@ -81,9 +93,13 @@ body#destination {
                     li {
                         @include Nav-Text;
                         list-style: none;
-                        margin-right: 36px;
+                        margin-right: 27px;
                         padding-bottom: 12px;
+
+                        @include breakpoint(portrait) {
+                        margin-right: 36px;
                         font-size: 16px;
+                        }
 
                         &:last-child {
                             margin-right: 0;
@@ -106,40 +122,58 @@ body#destination {
                 }
 
                 p {
-                    max-width: 578px;
+                    max-width: 327px;
                     text-align: center;
 
+                    @include breakpoint(portrait) {
+                        max-width: 578px;
+                    }
+
                     @include breakpoint(large) {
-                    max-width: 444px;
-                    text-align: start;
+                        max-width: 444px;
+                        text-align: start;
                     }
                 }
 
                 hr {
                     @include hr;
-                    width: 578px;
+                    width: 327px;
                     margin-top: 25px;
                     margin-bottom: 20px;
 
+                    @include breakpoint(portrait) {
+                        width: 578px;
+                    }
+
                     @include breakpoint(large) {
-                    width: 444px;
-                    margin-top: 45px;
-                    margin-bottom: 28px;
+                        width: 444px;
+                        margin-top: 45px;
+                        margin-bottom: 28px;
                     }
                 }
             }
 
             &__stats {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 margin-bottom: 40px;
+
+                @include breakpoint(portrait) {
+                    flex-direction: row;
+                }
 
                 @include breakpoint(large) {
                     margin-bottom: 0;
                 }
 
                 article {
-                    margin-right: 79px;
+                    margin-right: 0;
+                    margin-bottom: 32px;
+
+                    @include breakpoint(portrait) {
+                        margin-right: 79px;
+                        margin-bottoM: 0;
+                    }
 
                     &:last-child {
                         margin-right: 0px;

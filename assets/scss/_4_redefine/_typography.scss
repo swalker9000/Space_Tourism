@@ -4,16 +4,24 @@
 
 @mixin h1 {
     @include Bellefair;
-    font-size: 150px;
+    font-size: 80px;
     color: $white;
     text-transform: uppercase;
+
+    @include breakpoint(portrait) {
+        font-size: 150px;
+    }
 }
 
 @mixin h2 {
     @include Bellefair;
-    font-size: 80px;
+    font-size: 56px;
     color: $white;
     text-transform: uppercase;
+
+    @include breakpoint(portrait) {
+        font-size: 80px;
+    }
 
     @include breakpoint(large) {
         font-size: 100px;
@@ -22,9 +30,13 @@
 
 @mixin h3 {
     @include Bellefair;
-    font-size: 40px;
+    font-size: 24px;
     color: $white;
     text-transform: uppercase;
+
+    @include breakpoint(portrait) {
+        font-size: 40px;
+    }
 
     @include breakpoint(large) {
         font-size: 56px;
@@ -34,17 +46,25 @@
 
 @mixin h4 {
     @include Bellefair;
-    font-size: 32px;
+    font-size: 16px;
     color: $white;
     text-transform: uppercase;
+
+    @include breakpoint(portrait) {
+        font-size: 32px;
+    }
 }
 
 @mixin h5 {
     @include BarlowCondensed;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 4.75px;
     color: $lightblue-grey;
     text-transform: uppercase;
+
+    @include breakpoint(portrait) {
+        font-size: 20px;
+    }
 
     @include breakpoint(large) {
         font-size: 28px;

@@ -9,20 +9,7 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body id="home">
-<header>
-<section class="nav-bar">
-  <figure>
-    <img src="./assets/img/shared/logo.svg" alt="logo">
-  </figure>
-  <hr>
-  <nav id="main-nav">
-    <a href="/" class="active"><strong>00</strong> Home</a>
-    <a href="/destination.php"><strong>01</strong> Destination</a>
-    <a href="/crew.php"><strong>02</strong> Crew</a>
-    <a href="/technology.php"><strong>03</strong> Technology</a>
-  </nav>
-</section>
-</header> 
+<?php include './partials/header.html' ?>
 <main class="home">
   <section class="intro">
     <h5>  So, you want to travel to</h5>

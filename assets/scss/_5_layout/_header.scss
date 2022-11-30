@@ -3,60 +3,134 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 0 39px;
+    margin: 24px;
+    
+    @include breakpoint(portrait) {
+        margin: 0 0 0 39px;
+    }
 
     @include breakpoint(large) {
     margin: 40px 0 40px 55px;
     }
 
+    figure {
+        margin: 0;
+
+        @include breakpoint(portrait) {
+            margin: initial;
+        }
+    }
+
     hr {
+        display: none;
+
+        @include breakpoint(large) {
         @include hr;
+        display: initial;
         width: 473px;
         position: absolute;
         left: 168px;
         z-index: 9999;
+        }
     }
 
-    nav {
+    #main-nav {
+        display: none;
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40.7742px); 
-        padding: 39px 46px 39px 48px;
 
+        @include breakpoint(portrait) {
+        padding: 39px 46px 39px 48px;
+        display: initial;
+        }
         @include breakpoint(large) {
         padding: 39px 165px 38px 123px;  
         }
+    }
+}
 
-        a {
-            @include Nav-Text;
-            list-style: none;
+#hamburger {
+    position: aboslute;
+    top: 35px;
+    right: 24px;
+
+    @include breakpoint (portrait) {
+        display: none;
+    }
+}
+
+nav#mobile-nav {
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(40.7742px);
+    position: absolute;
+    z-index: 9999;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    width: 68%;
+
+    #close-nav {
+        position: relative;
+        top: 35px;
+        left: 210px;
+        height: 20px;
+        width: 20px;
+    }
+
+
+}
+
+nav#mobile-nav,
+nav#main-nav {
+    a {
+        @include Nav-Text;
+        list-style: none;
+        margin-right: 48px;
+        padding-bottom: 38px;
+        position:relative;
+        top: 125px;
+        left: 24px;
+
+        @include breakpoint(portrait) {
+            top: initial;
+            left: initial;
             margin-right: 48px;
             padding-bottom: 38px;
 
-
-            &:last-child {
-                margin-right: 0;
-            }
-
             &:hover {
-                @include hover;
-            }
-
-            &:active,
-            &.active {
-                @include active;
-            }
-
-            strong {
-
-                @include breakpoint(portrait) {
-                    display: none;
-                }
-
-                @include breakpoint(large) {
-                    display: inline;
-                }
-            }
-
+                        @include hover;
+                    }
+        
+                    &:active,
+                    &.active {
+                        @include active;
+                    }
+        
+                    strong {
+        
+                        @include breakpoint(portrait) {
+                            display: none;
+                        }
+        
+                        @include breakpoint(large) {
+                            display: inline;
+                        }
+                    }
         }
+
+
+        &:last-child {
+            margin-right: 0;
+        }
+
     }
+}
+
+.close {
+    display: none;
+}
+
+.open {
+    display: flex;
+    flex-direction: column;
 }
