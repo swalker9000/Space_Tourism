@@ -17,24 +17,26 @@ $barlowCondensed: "BarlowCondensed-Medium";
 $barlowCondensed-light: "BarlowCondensed-Light";
 
 @mixin Bellefair {
-    font-family: $bellefair;
+    font-family: $bellefair, serif;
     font-weight: 400;
 }
 
 @mixin Barlow-Regular {
-    font-family: $barlow;
+    font-family: $barlow, sans-serif;
     font-weight: 400;
 }
 
 @mixin Barlow-Light {
-    font-family: $barlow-light;
+    font-family: $barlow-light, sans-serif;
+    font-weight: 300;
 }
 
 @mixin BarlowCondensed {
-    font-family: $barlowCondensed;
+    font-family: $barlowCondensed, sans-serif;
     font-weight: 400;
 }
 
 @mixin BarlowCondensed-Light {
-    font-family: $barlowCondensed-light;
+    font-family: $barlowCondensed-light, sans-serif;
+    font-weight: 300;
 }
