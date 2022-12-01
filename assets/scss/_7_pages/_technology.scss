@@ -52,10 +52,14 @@ body#technology {
                 display: flex;
                 flex-direction: column;
                 height: auto;
-                width: 458px;
+                width: 327px;
                 justify-content: space-between;
                 align-items: center;
                 order: 2;
+
+                @include breakpoint(portrait) {
+                    width: 458px;
+                }
 
                 @include breakpoint(large) {
                     flex-direction: row;
@@ -143,10 +147,10 @@ body#technology {
 
             figure.launch-image {
                 order: 1;
-                margin-bottom: 56px;
+                margin: 0 0 56px;
 
                 @include breakpoint(large) {
-                    margin-right: 0;
+
                     order: 2;
                     margin-bottom: 0;
 
