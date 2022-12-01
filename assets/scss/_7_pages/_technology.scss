@@ -17,12 +17,17 @@ body#technology {
         flex-direction: column;
         margin: 40px 0 0;
         justify-content: space-between;
+        align-items: center;
+
+        @include breakpoint(portrait) {
+            align-items: initial;
+        }
 
         @include breakpoint (large) {
             margin: 35px 0 0 166px;
         }
-        
-        h5{
+
+        h5 {
             margin-top: 0px;
             margin-bottom: 26px;
         }
@@ -46,7 +51,7 @@ body#technology {
             .launch-steps {
                 display: flex;
                 flex-direction: column;
-                height: 237px;
+                height: auto;
                 width: 458px;
                 justify-content: space-between;
                 align-items: center;
@@ -96,7 +101,7 @@ body#technology {
                             background: $white;
                             color: $black;
                         }
-                        
+
                     }
 
                 }
@@ -104,8 +109,13 @@ body#technology {
                 .launch-steps__terminology {
                     display: flex;
                     flex-direction: column;
-                    width: 458px;
+                    width: 327px;
                     text-align: center;
+
+
+                    @include breakpoint(portrait) {
+                        width: 458px;
+                    }
 
                     @include breakpoint(large) {
                         text-align: start;
@@ -122,25 +132,35 @@ body#technology {
 
                     h3 {
                         margin: 0 0 10px 0;
+
                         @include breakpoint(large) {
-                        margin: 0 0 17px 0;
+                            margin: 0 0 17px 0;
                         }
                     }
                 }
-                
+
             }
-        
+
             figure.launch-image {
                 order: 1;
-                margin-bottom: 56px; 
+                margin-bottom: 56px;
 
                 @include breakpoint(large) {
-                margin-right: 0;
-                order: 2;
-                margin-bottom: 0;
+                    margin-right: 0;
+                    order: 2;
+                    margin-bottom: 0;
+
+
+                }
+
+                img {
+                    width: 375px;
+
+                    @include breakpoint(portrait) {
+                        width: initial;
+                    }
                 }
             }
         }
     }
 }
-

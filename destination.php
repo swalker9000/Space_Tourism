@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
   <link rel="stylesheet" href="../assets/dist/css/main.css">
-  <!-- <script src="../assets/js/app.js"></script> -->
   <script src="../assets/js/destination.js"></script>
   <title>Frontend Mentor | Space tourism website</title>
 </head>

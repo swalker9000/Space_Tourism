@@ -5,16 +5,17 @@ h2 {
 
 body#destination {
     background: url("../../img/destination/background-destination-mobile.jpg");
-    background: cover;
+    background-size: cover;
+    height: 100%;
 
     @include breakpoint(portrait) {
     background: url("../../img/destination/background-destination-tablet.jpg");
-    background: cover;
+    background-size: cover;
     }
 
     @include breakpoint(large) {
         background: url("../../img/destination/background-destination-desktop.jpg");
-        background: cover;
+        background-size: cover;
     }
 
     main.destination {

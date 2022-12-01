@@ -28,6 +28,7 @@ body#home {
     background: url("../../img/home/background-home-mobile.jpg");
     background-size: cover;
     margin: 0;
+    height: 100vh;
 
     @include breakpoint(portrait) {
     background: url("../../img/home/background-home-tablet.jpg");
@@ -88,18 +89,22 @@ body#home {
             border-radius: 50%;
             padding: 30px;
             position: absolute;
-            bottom: 60px;
+            bottom: calc(25% - 115px);
+            // bottom: 60px;
             // margin-top: 156px;
+            margin-bottom: 50px;
 
             @include breakpoint(portrait) {
                 padding: 70px;
-                bottom: 108px;
+                // bottom: 108px;
+                margin-bottom: initial;
             }
 
             @include breakpoint(large) {
             position: absolute;
-            left: 1001px;
-            top: 495px;
+            right: calc(15% - 38px);
+            // top: 495px;
+            top: calc(60% - 120px);
             margin-top:0;
             bottom: initial;
             }
@@ -116,18 +121,19 @@ body#home {
                 border-width: 50px;
                 background-clip: padding-box;
                 // margin-top: 68px;
-                bottom: 10px;
+                bottom: calc(10% - 65px);
 
                 @include breakpoint(portrait) {
                     border-width: 88px;
-                    
-                    bottom: 20px;
+                    bottom: calc(15% - 100px);
+                    // bottom: 20px;
                 }
 
                 @include breakpoint(large) {
                     margin-top: 0px;
                     left: 913px;
-                    top: 407px;
+                    // top: 407px;
+                    top: calc(60% - 208px);
                     bottom: initial;
                 }
 
