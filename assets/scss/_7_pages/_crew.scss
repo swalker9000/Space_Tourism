@@ -39,7 +39,7 @@ body#crew {
             margin-left: 38px;
             position: absolute;
             top: 65px;
-            left: 50px;
+            left: 100px;
 
             @include breakpoint(portrait) {
                 position: inherit;
