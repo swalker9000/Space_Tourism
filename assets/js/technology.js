@@ -66,9 +66,6 @@ function activeNav() {
 }
 
 
-window.onresize = function () {
-    getInfo(0);
-}
 
 function setTechnologyName(name) {
     var technologyName = document.getElementById("name");
@@ -118,6 +115,9 @@ function technologySelection() {
             removeClass(activeClass, "class");
             addClass(technologyOptions[i], "active");
             getInfo(technologyID);
+            window.onresize = function () {
+                getInfo(technologyID);
+            }
         });
     }
 }
