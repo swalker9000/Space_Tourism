@@ -89,12 +89,13 @@ body#home {
             border-radius: 50%;
             padding: 30px;
             position: absolute;
-            bottom: calc(25% - 115px);
+            top: calc(80% + 30px);
             margin-bottom: 50px;
 
             @include breakpoint(portrait) {
                 padding: 70px;
                 margin-bottom: initial;
+                top: calc(70% - 70px);
             }
 
             @include breakpoint(large) {
@@ -102,7 +103,6 @@ body#home {
             right: calc(15% - 38px);
             top: calc(60% - 120px);
             margin-top:0;
-            bottom: initial;
             }
 
             h5 a {
@@ -116,11 +116,11 @@ body#home {
                 border-color: rgba(255, 255, 255, 0.1);
                 border-width: 50px;
                 background-clip: padding-box;
-                bottom: calc(10% - 65px);
+                top: calc(80% - 20px);
 
                 @include breakpoint(portrait) {
                     border-width: 88px;
-                    bottom: calc(15% - 100px);
+                    top: calc(70% - 157px);
                 }
 
                 @include breakpoint(large) {
