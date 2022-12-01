@@ -90,20 +90,16 @@ body#home {
             padding: 30px;
             position: absolute;
             bottom: calc(25% - 115px);
-            // bottom: 60px;
-            // margin-top: 156px;
             margin-bottom: 50px;
 
             @include breakpoint(portrait) {
                 padding: 70px;
-                // bottom: 108px;
                 margin-bottom: initial;
             }
 
             @include breakpoint(large) {
             position: absolute;
             right: calc(15% - 38px);
-            // top: 495px;
             top: calc(60% - 120px);
             margin-top:0;
             bottom: initial;
@@ -120,19 +116,16 @@ body#home {
                 border-color: rgba(255, 255, 255, 0.1);
                 border-width: 50px;
                 background-clip: padding-box;
-                // margin-top: 68px;
                 bottom: calc(10% - 65px);
 
                 @include breakpoint(portrait) {
                     border-width: 88px;
                     bottom: calc(15% - 100px);
-                    // bottom: 20px;
                 }
 
                 @include breakpoint(large) {
                     margin-top: 0px;
                     left: 913px;
-                    // top: 407px;
                     top: calc(60% - 208px);
                     bottom: initial;
                 }
