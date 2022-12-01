@@ -125,7 +125,7 @@ body#home {
 
                 @include breakpoint(large) {
                     margin-top: 0px;
-                    left: 913px;
+                    right: calc(10% - 53px);
                     top: calc(60% - 208px);
                     bottom: initial;
                 }
