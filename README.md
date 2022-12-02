@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/swalker9000/Space_Tourism)
-- Live Site URL: [Add live site URL here](https://loquacious-wisp-b4201b.netlify.app/)
+- Solution URL: [https://github.com/swalker9000/Space_Tourism](https://github.com/swalker9000/Space_Tourism)
+- Live Site URL: [https://loquacious-wisp-b4201b.netlify.app/](https://loquacious-wisp-b4201b.netlify.app/)
 
 ## My process
 
@@ -53,9 +53,9 @@ I would like to continue to learn best practices for responsiveness so the layou
 
 ### Useful resources
 
-- [MDN Web Docs] (https://developer.mozilla.org/en-US/docs/Web) - This resource was helpful for JavaScript syntax.
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web) - This resource was helpful for JavaScript syntax.
 - [GEEKS FOR GEEKS](https://www.geeksforgeeks.org/javascript/) - This site has a large library of JavaScript articles with code snipets that helped me with how to fetch and parse .json data. 
-- [Techstacker] (https://techstacker.com/javascript-detect-if-screen-width-is-greater-or-less-than/) - this article was helpful in creating a listener for changes in the screen size to trigger a change in which image should be used in the mobile and tablet layout vs. the desktop layout. 
+- [Techstacker](https://techstacker.com/javascript-detect-if-screen-width-is-greater-or-less-than/) - this article was helpful in creating a listener for changes in the screen size to trigger a change in which image should be used in the mobile and tablet layout vs. the desktop layout. 
 
 
 ## Author
